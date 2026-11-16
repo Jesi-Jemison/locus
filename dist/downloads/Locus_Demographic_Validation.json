@@ -1,0 +1,334 @@
+{
+  "profiles": 15459,
+  "category_rows": 2056047,
+  "category_and_denominator_references": 2179719,
+  "unique_published_cells_verified": 2148801,
+  "mismatches": 0,
+  "unverified_references": 0,
+  "index_counts": {
+    "SAL": 15352,
+    "SA4": 107
+  },
+  "sample_profiles": [
+    {
+      "type": "SA4",
+      "code": "117",
+      "name": "Sydney - City and Inner South",
+      "population": 331340,
+      "age_categories": [
+        {
+          "label": "0–4 years",
+          "value": 13593,
+          "source_field": "Age_0_4_yr_P"
+        },
+        {
+          "label": "5–14 years",
+          "value": 19229,
+          "source_field": "Age_5_14_yr_P"
+        },
+        {
+          "label": "15–19 years",
+          "value": 10170,
+          "source_field": "Age_15_19_yr_P"
+        },
+        {
+          "label": "20–24 years",
+          "value": 31157,
+          "source_field": "Age_20_24_yr_P"
+        },
+        {
+          "label": "25–34 years",
+          "value": 95819,
+          "source_field": "Age_25_34_yr_P"
+        },
+        {
+          "label": "35–44 years",
+          "value": 59167,
+          "source_field": "Age_35_44_yr_P"
+        },
+        {
+          "label": "45–54 years",
+          "value": 38106,
+          "source_field": "Age_45_54_yr_P"
+        },
+        {
+          "label": "55–64 years",
+          "value": 29296,
+          "source_field": "Age_55_64_yr_P"
+        },
+        {
+          "label": "65–74 years",
+          "value": 20220,
+          "source_field": "Age_65_74_yr_P"
+        },
+        {
+          "label": "75–84 years",
+          "value": 10722,
+          "source_field": "Age_75_84_yr_P"
+        },
+        {
+          "label": "85 years and over",
+          "value": 3864,
+          "source_field": "Age_85ov_P"
+        }
+      ],
+      "income_categories": [
+        {
+          "label": "Negative / nil income",
+          "value": 4153,
+          "source_field": "Negative_Nil_income_Tot"
+        },
+        {
+          "label": "$1–$149",
+          "value": 892,
+          "source_field": "HI_1_149_Tot"
+        },
+        {
+          "label": "$150–$299",
+          "value": 1855,
+          "source_field": "HI_150_299_Tot"
+        },
+        {
+          "label": "$300–$399",
+          "value": 3390,
+          "source_field": "HI_300_399_Tot"
+        },
+        {
+          "label": "$400–$499",
+          "value": 5418,
+          "source_field": "HI_400_499_Tot"
+        },
+        {
+          "label": "$500–$649",
+          "value": 3824,
+          "source_field": "HI_500_649_Tot"
+        },
+        {
+          "label": "$650–$799",
+          "value": 4826,
+          "source_field": "HI_650_799_Tot"
+        },
+        {
+          "label": "$800–$999",
+          "value": 5787,
+          "source_field": "HI_800_999_Tot"
+        },
+        {
+          "label": "$1,000–$1,249",
+          "value": 7550,
+          "source_field": "HI_1000_1249_Tot"
+        },
+        {
+          "label": "$1,250–$1,499",
+          "value": 8156,
+          "source_field": "HI_1250_1499_Tot"
+        },
+        {
+          "label": "$1,500–$1,749",
+          "value": 7490,
+          "source_field": "HI_1500_1749_Tot"
+        },
+        {
+          "label": "$1,750–$1,999",
+          "value": 7621,
+          "source_field": "HI_1750_1999_Tot"
+        },
+        {
+          "label": "$2,000–$2,499",
+          "value": 18499,
+          "source_field": "HI_2000_2499_Tot"
+        },
+        {
+          "label": "$2,500–$2,999",
+          "value": 8700,
+          "source_field": "HI_2500_2999_Tot"
+        },
+        {
+          "label": "$3,000–$3,499",
+          "value": 10623,
+          "source_field": "HI_3000_3499_Tot"
+        },
+        {
+          "label": "$3,500–$3,999",
+          "value": 6589,
+          "source_field": "HI_3500_3999_Tot"
+        },
+        {
+          "label": "$4,000 or more",
+          "value": 31883,
+          "source_field": "HI_4000_more_Tot"
+        },
+        {
+          "label": "Partial income stated",
+          "value": 5584,
+          "source_field": "Partial_income_stated_Tot"
+        },
+        {
+          "label": "All incomes not stated",
+          "value": 1782,
+          "source_field": "All_incomes_not_stated_Tot"
+        }
+      ]
+    },
+    {
+      "type": "SAL",
+      "code": "12969",
+      "name": "Newtown (NSW)",
+      "population": 14690,
+      "age_categories": [
+        {
+          "label": "0–4 years",
+          "value": 515,
+          "source_field": "Age_0_4_yr_P"
+        },
+        {
+          "label": "5–14 years",
+          "value": 896,
+          "source_field": "Age_5_14_yr_P"
+        },
+        {
+          "label": "15–19 years",
+          "value": 462,
+          "source_field": "Age_15_19_yr_P"
+        },
+        {
+          "label": "20–24 years",
+          "value": 1457,
+          "source_field": "Age_20_24_yr_P"
+        },
+        {
+          "label": "25–34 years",
+          "value": 4238,
+          "source_field": "Age_25_34_yr_P"
+        },
+        {
+          "label": "35–44 years",
+          "value": 2517,
+          "source_field": "Age_35_44_yr_P"
+        },
+        {
+          "label": "45–54 years",
+          "value": 1987,
+          "source_field": "Age_45_54_yr_P"
+        },
+        {
+          "label": "55–64 years",
+          "value": 1422,
+          "source_field": "Age_55_64_yr_P"
+        },
+        {
+          "label": "65–74 years",
+          "value": 799,
+          "source_field": "Age_65_74_yr_P"
+        },
+        {
+          "label": "75–84 years",
+          "value": 296,
+          "source_field": "Age_75_84_yr_P"
+        },
+        {
+          "label": "85 years and over",
+          "value": 102,
+          "source_field": "Age_85ov_P"
+        }
+      ],
+      "income_categories": [
+        {
+          "label": "Negative / nil income",
+          "value": 99,
+          "source_field": "Negative_Nil_income_Tot"
+        },
+        {
+          "label": "$1–$149",
+          "value": 36,
+          "source_field": "HI_1_149_Tot"
+        },
+        {
+          "label": "$150–$299",
+          "value": 70,
+          "source_field": "HI_150_299_Tot"
+        },
+        {
+          "label": "$300–$399",
+          "value": 123,
+          "source_field": "HI_300_399_Tot"
+        },
+        {
+          "label": "$400–$499",
+          "value": 228,
+          "source_field": "HI_400_499_Tot"
+        },
+        {
+          "label": "$500–$649",
+          "value": 177,
+          "source_field": "HI_500_649_Tot"
+        },
+        {
+          "label": "$650–$799",
+          "value": 206,
+          "source_field": "HI_650_799_Tot"
+        },
+        {
+          "label": "$800–$999",
+          "value": 271,
+          "source_field": "HI_800_999_Tot"
+        },
+        {
+          "label": "$1,000–$1,249",
+          "value": 335,
+          "source_field": "HI_1000_1249_Tot"
+        },
+        {
+          "label": "$1,250–$1,499",
+          "value": 356,
+          "source_field": "HI_1250_1499_Tot"
+        },
+        {
+          "label": "$1,500–$1,749",
+          "value": 325,
+          "source_field": "HI_1500_1749_Tot"
+        },
+        {
+          "label": "$1,750–$1,999",
+          "value": 348,
+          "source_field": "HI_1750_1999_Tot"
+        },
+        {
+          "label": "$2,000–$2,499",
+          "value": 788,
+          "source_field": "HI_2000_2499_Tot"
+        },
+        {
+          "label": "$2,500–$2,999",
+          "value": 394,
+          "source_field": "HI_2500_2999_Tot"
+        },
+        {
+          "label": "$3,000–$3,499",
+          "value": 454,
+          "source_field": "HI_3000_3499_Tot"
+        },
+        {
+          "label": "$3,500–$3,999",
+          "value": 348,
+          "source_field": "HI_3500_3999_Tot"
+        },
+        {
+          "label": "$4,000 or more",
+          "value": 1639,
+          "source_field": "HI_4000_more_Tot"
+        },
+        {
+          "label": "Partial income stated",
+          "value": 283,
+          "source_field": "Partial_income_stated_Tot"
+        },
+        {
+          "label": "All incomes not stated",
+          "value": 51,
+          "source_field": "All_incomes_not_stated_Tot"
+        }
+      ]
+    }
+  ]
+}

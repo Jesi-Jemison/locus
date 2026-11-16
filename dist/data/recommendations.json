@@ -1,0 +1,75 @@
+[
+  {
+    "title": "Official SEIFA context",
+    "priority": "High",
+    "use": "Compare area-level relative advantage, disadvantage, education/occupation and resources alongside supplied segments.",
+    "source": "ABS SEIFA 2021",
+    "url": "https://www.abs.gov.au/statistics/people/people-and-communities/socio-economic-indexes-areas-seifa-australia/latest-release",
+    "grain": "SA1, SA2, LGA, SAL or POA (2021)",
+    "caution": "Use the exact index and geography vintage. These describe areas, not individual people. Do not copy a 2021 code directly into the 2026 geography model."
+  },
+  {
+    "title": "Housing and dwelling stock",
+    "priority": "High",
+    "use": "Detached/semi/apartment mix, occupied/unoccupied dwellings, tenure and bedrooms can contextualise local building markets.",
+    "source": "ABS Census DataPacks",
+    "url": "https://www.abs.gov.au/census/guide-census-data/about-census-tools/datapacks",
+    "grain": "Published Census geographies, down to SA1",
+    "caution": "A housing-market context, not evidence that a specific property requires demolition. Preserve reference year and denominators."
+  },
+  {
+    "title": "Building approvals and development pipeline",
+    "priority": "High",
+    "use": "Filter by recent approval volumes, value, dwelling type and trend to identify places with more construction activity.",
+    "source": "ABS Building Approvals small-area data",
+    "url": "https://www.abs.gov.au/methodologies/building-approvals-australia-methodology/dec-2025",
+    "grain": "LGA/SA2 with published reference period and boundary edition",
+    "caution": "An approval is not a commencement or demolition order; data can be revised."
+  },
+  {
+    "title": "Planning controls and development applications",
+    "priority": "High",
+    "use": "Overlay zoning, planning controls and current project/application footprints when the responsible jurisdiction supplies them.",
+    "source": "State/council planning datasets; NSW Planning Portal example",
+    "url": "https://www.planningportal.nsw.gov.au/spatialviewer/",
+    "grain": "Property/parcel, zones and application features",
+    "caution": "Coverage and rules vary by state/council. Keep layers jurisdiction-specific and date-stamped."
+  },
+  {
+    "title": "Population growth and density",
+    "priority": "Medium",
+    "use": "Compare demand context using population, density and recent growth at published regional levels.",
+    "source": "ABS Regional Population",
+    "url": "https://www.abs.gov.au/statistics/people/population/regional-population/latest-release",
+    "grain": "SA2/LGA and higher regions; 2024–25 release available at access date",
+    "caution": "Preserve the population estimate date and geographic edition; growth alone is not a business-demand forecast."
+  },
+  {
+    "title": "Waste and recycling infrastructure",
+    "priority": "High for demolition workflows",
+    "use": "Locate waste-management/recycling facilities and compare distance from businesses or projects.",
+    "source": "Geoscience Australia Waste Management Facilities",
+    "url": "https://services.ga.gov.au/gis/rest/services/Waste_Management_Facilities/MapServer/0",
+    "grain": "Facility points with identifiers, type, operational status and geocoding metadata",
+    "caution": "Check accepted materials and current operational status with the facility. Straight-line proximity is not road travel time."
+  },
+  {
+    "title": "Flood and environmental constraints",
+    "priority": "Medium",
+    "use": "Show dated hazard/study coverage and link to the responsible state/council sources for planning context.",
+    "source": "Geoscience Australia AFRIP catalogue plus current custodians",
+    "url": "https://www.ga.gov.au/scientific-topics/community-safety/data-and-products/afrip",
+    "grain": "Study coverage, model/scenario polygons or authoritative hazard surfaces",
+    "caution": "AFRIP is a historical catalogue of studies up to 2018, not a current nationwide risk score. Keep study date, model scenario and coverage visible."
+  },
+  {
+    "title": "Business and licence coverage",
+    "priority": "High for business layers",
+    "use": "Overlay uploaded suppliers/competitors with ABN status and official licence verification where available.",
+    "source": "ABN Lookup bulk extract and state regulator registers",
+    "url": "https://abr.business.gov.au/Tools/BulkExtract",
+    "additional_url": "https://verify.licence.nsw.gov.au/",
+    "grain": "Business identity, source records and separately geocoded branch locations",
+    "caution": "Public ABN bulk data has state/postcode, not full street-address coordinates or a complete demolition classification. A regulator list covers its licensing scope, not automatically all Australian demolishers."
+  }
+]

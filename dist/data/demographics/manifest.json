@@ -1,0 +1,173 @@
+{
+  "schema_version": 1,
+  "reference_year": 2021,
+  "boundary_edition": "ASGS Edition 3 (2021)",
+  "sources": [
+    {
+      "type": "SAL",
+      "title": "2021 Census General Community Profile — SAL",
+      "url": "https://www.abs.gov.au/census/find-census-data/datapacks?geography=SAL&product=GCP&release=2021",
+      "download_url": "https://www.abs.gov.au/census/find-census-data/datapacks/download/2021_GCP_SAL_for_AUS_short-header.zip",
+      "download_sha256": "940c57082442cad68e7399ab7c5eab6fd690ec8e8b68ce9799b02d69b9b7bdba",
+      "accessed": "2026-11-05",
+      "tables": {
+        "G01": {
+          "title": "Selected Person Characteristics by Sex",
+          "universe": "Persons"
+        },
+        "G08": {
+          "title": "Ancestry by Country of Birth of Parents",
+          "universe": "Responses and persons"
+        },
+        "G09": {
+          "title": "Country of Birth of Person by Age by Sex",
+          "universe": "Persons"
+        },
+        "G16": {
+          "title": "Highest Year of School Completed by Age by Sex",
+          "universe": "Persons aged 15 years and over who are no longer attending primary or secondary school."
+        },
+        "G33": {
+          "title": "Total Household Income (Weekly) by Household Composition",
+          "universe": "Occupied private dwellings"
+        },
+        "G49": {
+          "title": "Highest Non-School Qualification:  Level of Education by Age by Sex",
+          "universe": "Persons aged 15 years and over with a non-school qualification"
+        }
+      }
+    },
+    {
+      "type": "SA4",
+      "title": "2021 Census General Community Profile — SA4",
+      "url": "https://www.abs.gov.au/census/find-census-data/datapacks?geography=SA4&product=GCP&release=2021",
+      "download_url": "https://www.abs.gov.au/census/find-census-data/datapacks/download/2021_GCP_SA4_for_AUS_short-header.zip",
+      "download_sha256": "367c0a377332ace9bef83ff9623c3cb39fced0f8be269630d7bd0658fc1ca72b",
+      "accessed": "2026-11-05",
+      "tables": {
+        "G01": {
+          "title": "Selected Person Characteristics by Sex",
+          "universe": "Persons"
+        },
+        "G08": {
+          "title": "Ancestry by Country of Birth of Parents",
+          "universe": "Responses and persons"
+        },
+        "G09": {
+          "title": "Country of Birth of Person by Age by Sex",
+          "universe": "Persons"
+        },
+        "G16": {
+          "title": "Highest Year of School Completed by Age by Sex",
+          "universe": "Persons aged 15 years and over who are no longer attending primary or secondary school."
+        },
+        "G33": {
+          "title": "Total Household Income (Weekly) by Household Composition",
+          "universe": "Occupied private dwellings"
+        },
+        "G49": {
+          "title": "Highest Non-School Qualification:  Level of Education by Age by Sex",
+          "universe": "Persons aged 15 years and over with a non-school qualification"
+        }
+      }
+    }
+  ],
+  "counts": {
+    "SAL": {
+      "profiles": 15352,
+      "metrics_per_profile": 8,
+      "category_rows": 2041816,
+      "table_code_counts": {
+        "G01": 15352,
+        "G08": 15352,
+        "G09": 15352,
+        "G16": 15352,
+        "G33": 15352,
+        "G49": 15352
+      },
+      "sum_differences": {
+        "age": {
+          "areas": 13773,
+          "maximum_absolute_difference": 25
+        },
+        "sex": {
+          "areas": 12964,
+          "maximum_absolute_difference": 11
+        },
+        "household_income": {
+          "areas": 13552,
+          "maximum_absolute_difference": 31
+        },
+        "country_of_birth": {
+          "areas": 13235,
+          "maximum_absolute_difference": 47
+        },
+        "school_education": {
+          "areas": 13482,
+          "maximum_absolute_difference": 18
+        },
+        "qualifications": {
+          "areas": 13280,
+          "maximum_absolute_difference": 24
+        }
+      }
+    },
+    "SA4": {
+      "profiles": 107,
+      "metrics_per_profile": 8,
+      "category_rows": 14231,
+      "table_code_counts": {
+        "G01": 107,
+        "G08": 107,
+        "G09": 107,
+        "G16": 107,
+        "G33": 107,
+        "G49": 107
+      },
+      "sum_differences": {
+        "sex": {
+          "areas": 90,
+          "maximum_absolute_difference": 10
+        },
+        "household_income": {
+          "areas": 87,
+          "maximum_absolute_difference": 25
+        },
+        "country_of_birth": {
+          "areas": 102,
+          "maximum_absolute_difference": 29
+        },
+        "school_education": {
+          "areas": 98,
+          "maximum_absolute_difference": 14
+        },
+        "qualifications": {
+          "areas": 95,
+          "maximum_absolute_difference": 18
+        },
+        "age": {
+          "areas": 100,
+          "maximum_absolute_difference": 20
+        }
+      }
+    }
+  },
+  "shards": [
+    "geo-index.json.gz",
+    "SA4.json.gz",
+    "SAL_1.json.gz",
+    "SAL_2.json.gz",
+    "SAL_3.json.gz",
+    "SAL_4.json.gz",
+    "SAL_5.json.gz",
+    "SAL_6.json.gz",
+    "SAL_7.json.gz",
+    "SAL_8.json.gz",
+    "SAL_9.json.gz"
+  ],
+  "notes": [
+    "Counts are published Census values; no demographic estimates or 2026 geographic conversions are made.",
+    "ABS applies confidentiality adjustments; independently adjusted cells and totals can differ. Percentages may not sum exactly to 100%.",
+    "General Community Profile is based on place of usual residence unless a table note specifies otherwise."
+  ]
+}

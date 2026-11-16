@@ -1,0 +1,137 @@
+/* Locus theme tokens and surfaces. Every theme presents the same underlying data. */
+:root:is([data-theme="synthwave"],[data-theme="galaxy"],[data-theme="gothic"]) .profile-view-switch button[aria-pressed="true"]{color:#111d1b}
+:root{--panel:#ffffff;--panel-soft:#f3f7ef;--chart-accent:#24766a;--chart-track:#e6eee6;--chart-label:#34554c;--heading-font:"Segoe UI",Arial,sans-serif;--input-bg:#fff;--theme-focus:#287d74;--map-bg:#e7eee9}
+:root[data-theme="clean"]{color-scheme:light;--panel:#fff;--panel-soft:#f3f7ef;--chart-accent:#24766a;--chart-track:#e6eee6;--chart-label:#34554c;--input-bg:#fff;--map-bg:#e7eee9}
+:root[data-theme="synthwave"]{color-scheme:dark;--panel:#21182f;--panel-soft:#30203e;--chart-accent:#ff86d3;--chart-track:#42304e;--chart-label:#e6d4f1;--heading-font:Bahnschrift,"Arial Black","Segoe UI",sans-serif;--input-bg:#130e24;--theme-focus:#66e9f2;--map-bg:#15142d}
+:root[data-theme="galaxy"]{color-scheme:dark;--ink:#e9efff;--muted:#afbdda;--paper:#0b1022;--line:#354361;--accent:#85d9f0;--soft:#1c2943;--white:#151f35;--shadow:0 16px 48px #02061480;--panel:#151f35;--panel-soft:#1c2943;--chart-accent:#9caaff;--chart-track:#2a3652;--chart-label:#cad6f0;--heading-font:"Segoe UI",Arial,sans-serif;--input-bg:#10182c;--theme-focus:#84e6ec;--map-bg:#0c152b;--theme-link:#9de4ef;--header-bg:#0d1528;--header-ink:#eaf2ff;--theme-tag:#233756;--theme-tag-ink:#b5d8ff;--theme-hover:#253456;--theme-button:#536ab0;--theme-button-hover:#687dc2;--theme-button-ink:#fff;--theme-notice:#212e4b;--theme-warning:#4c3b25;--theme-warning-ink:#ffe0a9;--theme-bad:#4c2940;--theme-bad-ink:#ffc2d9;--theme-good:#173f43;--theme-good-ink:#aae9df;--theme-map-edge:#8c9ac0;--theme-leaflet:#182440;--theme-decor:#9aa5ff}
+:root[data-theme="gothic"]{color-scheme:dark;--ink:#f0e9d8;--muted:#b9c0ad;--paper:#101a18;--line:#3c4c42;--accent:#cfb16e;--soft:#26372c;--white:#19271f;--shadow:0 16px 48px #03090680;--panel:#19271f;--panel-soft:#25352b;--chart-accent:#d2b878;--chart-track:#33463a;--chart-label:#dfd7c1;--heading-font:Georgia,"Times New Roman",serif;--input-bg:#121e19;--theme-focus:#d6c08c;--map-bg:#111d1b;--theme-link:#d9c78e;--header-bg:#111b17;--header-ink:#f0e9d8;--theme-tag:#3a303b;--theme-tag-ink:#e4c4d8;--theme-hover:#2c3b2e;--theme-button:#745665;--theme-button-hover:#8d697b;--theme-button-ink:#fff4ed;--theme-notice:#28382d;--theme-warning:#4a3c24;--theme-warning-ink:#eed59b;--theme-bad:#4a2e35;--theme-bad-ink:#efc5ce;--theme-good:#2a4231;--theme-good-ink:#c7dfb9;--theme-map-edge:#9eae91;--theme-leaflet:#1c2d23;--theme-decor:#ba9b68}
+:root[data-theme="modern"]{color-scheme:light;--ink:#172e45;--muted:#53677c;--paper:#f3f7fb;--line:#d4e0ea;--accent:#007e87;--soft:#e9f1f6;--white:#fff;--shadow:0 12px 35px #173f6414;--panel:#fff;--panel-soft:#f3f7fb;--chart-accent:#087f8c;--chart-track:#e5edf4;--chart-label:#36526b;--heading-font:"Segoe UI",Arial,sans-serif;--input-bg:#fff;--theme-focus:#007e87;--map-bg:#edf3f8;--theme-link:#006e7c;--header-bg:#fff;--header-ink:#17334b;--theme-tag:#e3f1f2;--theme-tag-ink:#076776;--theme-hover:#edf5f9;--theme-button:#006f7e;--theme-button-hover:#005a68;--theme-button-ink:#fff;--theme-notice:#edf5f8;--theme-warning:#fff2d7;--theme-warning-ink:#79561a;--theme-bad:#fce8ed;--theme-bad-ink:#913b54;--theme-good:#e1f3ec;--theme-good-ink:#246852;--theme-map-edge:#7c9bae;--theme-leaflet:#fff;--theme-decor:#44a7b3}
+
+/* The selector is deliberately available on every page and never reloads data. */
+.topbar{gap:22px}
+.theme-control{display:flex;align-items:center;gap:8px;margin-left:auto;flex-shrink:0}
+.theme-control label{margin:0;font:10px/1.3 "Segoe UI",Arial,sans-serif;letter-spacing:.3px;color:inherit;opacity:.8}
+.theme-control select{width:145px;min-height:35px;padding:7px 27px 7px 9px;font-size:11px;border:1px solid #9bb5bd70;background:#ffffff12;color:inherit;border-radius:5px}
+.theme-control select option{background:var(--panel);color:var(--ink)}
+.topbar .private-tag{margin-left:0}
+:root[data-theme="synthwave"] .theme-control select{background:#211735;border-color:#72517d;color:#f7e9ff}
+:root[data-theme="clean"] .theme-control select{background:#234c46;border-color:#6c9083;color:#f1f9f3}
+:root[data-theme="clean"] .theme-control select option{background:#fff;color:#193e3b}
+.profile-panel,.metric-card{color:var(--ink)}
+.profile-meta,.source-caption,.profile-empty{color:var(--muted)}
+.chart-track{background:var(--chart-track)}
+.chart-fill{background:var(--chart-accent)}
+.chart-label,.chart-value{color:var(--chart-label)}
+.profile-toolbar select,.profile-toolbar input{background:var(--input-bg);color:var(--ink)}
+.profile-panel h1,.profile-panel h2,.profile-panel h3{font-family:var(--heading-font)}
+
+/* Shared surfaces for Galaxy, Gothic Garden and Modern Atlas override the legacy literal colours. */
+:root:is([data-theme="galaxy"],[data-theme="gothic"],[data-theme="modern"]) body{background:var(--paper);color:var(--ink)}
+:root:is([data-theme="galaxy"],[data-theme="gothic"],[data-theme="modern"]) :is(h1,h2,h3,.brand){font-family:var(--heading-font)}
+:root:is([data-theme="galaxy"],[data-theme="gothic"],[data-theme="modern"]) :is(input,select){background:var(--input-bg);color:var(--ink);border-color:var(--line)}
+:root:is([data-theme="galaxy"],[data-theme="gothic"],[data-theme="modern"]) :is(input,select)::placeholder{color:var(--muted);opacity:.85}
+:root:is([data-theme="galaxy"],[data-theme="gothic"],[data-theme="modern"]) option{background:var(--panel);color:var(--ink)}
+:root:is([data-theme="galaxy"],[data-theme="gothic"],[data-theme="modern"]) :is(input,select):focus{outline:2px solid var(--theme-focus);border-color:var(--theme-focus)}
+:root:is([data-theme="galaxy"],[data-theme="gothic"],[data-theme="modern"]) :is(button,a,input,select,summary){outline-color:var(--theme-focus)}
+:root:is([data-theme="galaxy"],[data-theme="gothic"],[data-theme="modern"]) :is(input[type="checkbox"],input[type="radio"]){accent-color:var(--accent)}
+:root:is([data-theme="galaxy"],[data-theme="gothic"],[data-theme="modern"]) p{color:var(--muted)}
+:root:is([data-theme="galaxy"],[data-theme="gothic"],[data-theme="modern"]) .topbar{background:var(--header-bg);color:var(--header-ink);border-bottom:1px solid var(--line);box-shadow:0 2px 18px #0000000c}
+:root:is([data-theme="galaxy"],[data-theme="gothic"],[data-theme="modern"]) .brand-icon{color:var(--accent)}
+:root:is([data-theme="galaxy"],[data-theme="gothic"],[data-theme="modern"]) .brand-sub{color:var(--muted);font-family:"Segoe UI",Arial,sans-serif}
+:root:is([data-theme="galaxy"],[data-theme="gothic"],[data-theme="modern"]) .topbar nav button{color:var(--muted)}
+:root:is([data-theme="galaxy"],[data-theme="gothic"],[data-theme="modern"]) .topbar nav button.active,:root:is([data-theme="galaxy"],[data-theme="gothic"],[data-theme="modern"]) .topbar nav button:hover{color:var(--header-ink);background:var(--theme-hover)}
+:root:is([data-theme="galaxy"],[data-theme="gothic"],[data-theme="modern"]) .topbar nav button.active:after{background:var(--accent)}
+:root:is([data-theme="galaxy"],[data-theme="gothic"],[data-theme="modern"]) .private-tag{color:var(--muted)}
+:root:is([data-theme="galaxy"],[data-theme="gothic"],[data-theme="modern"]) .theme-control select{background:var(--input-bg);border-color:var(--line);color:var(--ink)}
+:root:is([data-theme="galaxy"],[data-theme="gothic"],[data-theme="modern"]) :is(.eyebrow,.stats strong,.step-number,.recommendation .number,.file-icon){color:var(--accent)}
+:root:is([data-theme="galaxy"],[data-theme="gothic"],[data-theme="modern"]) :is(.stats span,.help,.result-row small,.result-row em,.place-detail .coordinates,.detail-section dt,.detail-section small,.coverage,.download-meta,footer,.radio-card small,td small){color:var(--muted)}
+:root:is([data-theme="galaxy"],[data-theme="gothic"],[data-theme="modern"]) :is(.atlas-shell,.layer-picker,.filter-divider,.detail-section,.download-meta,.source-links,.radio-card,.table-wrap,.stats div){border-color:var(--line)}
+:root:is([data-theme="galaxy"],[data-theme="gothic"],[data-theme="modern"]) :is(.filters,.card,.recommendation,.place-detail){background:var(--panel);border-color:var(--line);color:var(--ink)}
+:root:is([data-theme="galaxy"],[data-theme="gothic"],[data-theme="modern"]) :is(.filters label,.card label:not(.drop-zone):not(.radio-card):not(.check),.business-filters label){color:var(--muted)}
+:root:is([data-theme="galaxy"],[data-theme="gothic"],[data-theme="modern"]) .search-wrap input{background:var(--input-bg)}
+:root:is([data-theme="galaxy"],[data-theme="gothic"],[data-theme="modern"]) .search-wrap span{color:var(--muted)}
+:root:is([data-theme="galaxy"],[data-theme="gothic"],[data-theme="modern"]) :is(.text-button,.text-link,.source-links){color:var(--theme-link)}
+:root:is([data-theme="galaxy"],[data-theme="gothic"],[data-theme="modern"]) .tiny-tag{background:var(--theme-tag);color:var(--theme-tag-ink);border:1px solid var(--line)}
+:root:is([data-theme="galaxy"],[data-theme="gothic"],[data-theme="modern"]) .result-row{background:transparent;border-color:var(--line);color:var(--ink)}
+:root:is([data-theme="galaxy"],[data-theme="gothic"],[data-theme="modern"]) .result-row:hover{background:var(--theme-hover)}
+:root:is([data-theme="galaxy"],[data-theme="gothic"],[data-theme="modern"]) :is(.secondary,.close-detail){background:var(--panel-soft);color:var(--ink);border-color:var(--line)}
+:root:is([data-theme="galaxy"],[data-theme="gothic"],[data-theme="modern"]) .secondary:hover{background:var(--theme-hover)}
+:root:is([data-theme="galaxy"],[data-theme="gothic"],[data-theme="modern"]) .primary{background:var(--theme-button);color:var(--theme-button-ink);border-color:var(--theme-button)}
+:root:is([data-theme="galaxy"],[data-theme="gothic"],[data-theme="modern"]) .primary:hover{background:var(--theme-button-hover);border-color:var(--theme-button-hover)}
+:root:is([data-theme="galaxy"],[data-theme="gothic"],[data-theme="modern"]) :is(.map-area,.leaflet-container){background-color:var(--map-bg)}
+:root:is([data-theme="galaxy"],[data-theme="gothic"],[data-theme="modern"]) :is(.map-toolbar button,.map-pill,.map-note,.legend){background:var(--panel);border:1px solid var(--line);color:var(--ink);box-shadow:var(--shadow)}
+:root:is([data-theme="galaxy"],[data-theme="gothic"],[data-theme="modern"]) .map-pill i{background:var(--accent)}
+:root:is([data-theme="galaxy"],[data-theme="gothic"],[data-theme="modern"]) :is(.legend p,.legend-row span span){color:var(--muted)!important}
+:root:is([data-theme="galaxy"],[data-theme="gothic"],[data-theme="modern"]) .map-loading{background:var(--paper)}
+:root:is([data-theme="galaxy"],[data-theme="gothic"],[data-theme="modern"]) .spinner{border-color:var(--line);border-top-color:var(--accent)}
+:root:is([data-theme="galaxy"],[data-theme="gothic"],[data-theme="modern"]) .chip{background:var(--panel-soft);color:var(--ink)}
+:root:is([data-theme="galaxy"],[data-theme="gothic"],[data-theme="modern"]) .cluster-icon{background:var(--panel);color:var(--ink);border-color:var(--theme-map-edge);box-shadow:var(--shadow)}
+:root:is([data-theme="galaxy"],[data-theme="gothic"],[data-theme="modern"]) :is(.leaflet-tooltip,.leaflet-popup-content-wrapper,.leaflet-popup-tip){background:var(--theme-leaflet);color:var(--ink);border-color:var(--line)}
+:root:is([data-theme="galaxy"],[data-theme="gothic"],[data-theme="modern"]) .leaflet-container a.leaflet-popup-close-button{color:var(--muted)}
+:root:is([data-theme="galaxy"],[data-theme="gothic"],[data-theme="modern"]) .leaflet-bar{border-color:var(--line)!important}
+:root:is([data-theme="galaxy"],[data-theme="gothic"],[data-theme="modern"]) .leaflet-bar a{background:var(--panel);color:var(--ink);border-color:var(--line)}
+:root:is([data-theme="galaxy"],[data-theme="gothic"],[data-theme="modern"]) .leaflet-bar a:hover{background:var(--theme-hover)}
+:root:is([data-theme="galaxy"],[data-theme="gothic"],[data-theme="modern"]) .leaflet-control-attribution{background:var(--panel)!important;color:var(--muted)}
+:root:is([data-theme="galaxy"],[data-theme="gothic"],[data-theme="modern"]) .leaflet-control-attribution a{color:var(--theme-link)}
+:root:is([data-theme="galaxy"],[data-theme="gothic"],[data-theme="modern"]) .drop-zone{background:var(--input-bg);border-color:var(--line)}
+:root:is([data-theme="galaxy"],[data-theme="gothic"],[data-theme="modern"]) .drop-zone:hover{border-color:var(--accent);background:var(--panel-soft)}
+:root:is([data-theme="galaxy"],[data-theme="gothic"],[data-theme="modern"]) .drop-zone>span:last-of-type{color:var(--muted)}
+:root:is([data-theme="galaxy"],[data-theme="gothic"],[data-theme="modern"]) .drop-zone input{background:var(--panel)}
+:root:is([data-theme="galaxy"],[data-theme="gothic"],[data-theme="modern"]) .upload-icon{color:var(--accent)}
+:root:is([data-theme="galaxy"],[data-theme="gothic"],[data-theme="modern"]) :is(.status-box,.callout,.quality-note){background:var(--theme-notice);color:var(--ink);border-color:var(--accent)}
+:root:is([data-theme="galaxy"],[data-theme="gothic"],[data-theme="modern"]) th{background:var(--panel-soft);color:var(--ink)}
+:root:is([data-theme="galaxy"],[data-theme="gothic"],[data-theme="modern"]) td{border-color:var(--line);color:var(--ink)}
+:root:is([data-theme="galaxy"],[data-theme="gothic"],[data-theme="modern"]) :is(.empty-state,.profile-empty){color:var(--muted)}
+:root:is([data-theme="galaxy"],[data-theme="gothic"],[data-theme="modern"]) .badge{background:var(--theme-good);color:var(--theme-good-ink)}
+:root:is([data-theme="galaxy"],[data-theme="gothic"],[data-theme="modern"]) .badge.warn{background:var(--theme-warning);color:var(--theme-warning-ink)}
+:root:is([data-theme="galaxy"],[data-theme="gothic"],[data-theme="modern"]) .badge.bad{background:var(--theme-bad);color:var(--theme-bad-ink)}
+:root:is([data-theme="galaxy"],[data-theme="gothic"],[data-theme="modern"]) .error{color:var(--theme-bad-ink)}
+:root:is([data-theme="galaxy"],[data-theme="gothic"],[data-theme="modern"]) #toast{background:var(--theme-notice);color:var(--ink);border-color:var(--accent)}
+:root:is([data-theme="galaxy"],[data-theme="gothic"],[data-theme="modern"]) .state-label{color:var(--muted)}
+:root:is([data-theme="galaxy"],[data-theme="gothic"],[data-theme="modern"]) input::file-selector-button{background:var(--panel-soft);color:var(--ink);border:1px solid var(--line);border-radius:4px;padding:5px 8px;margin-right:8px}
+:root:is([data-theme="galaxy"],[data-theme="gothic"],[data-theme="modern"]) .profile-panel{background:var(--panel);border-color:var(--line)}
+:root:is([data-theme="galaxy"],[data-theme="gothic"],[data-theme="modern"]) :is(.metric-card,.profile-summary){background:var(--panel-soft);border-color:var(--line)}
+:root:is([data-theme="galaxy"],[data-theme="gothic"],[data-theme="modern"]) *{scrollbar-color:var(--line) var(--panel)}
+
+/* Galaxy: a static night sky confined to decorative space, never layered over data. */
+:root[data-theme="galaxy"] body{background:radial-gradient(ellipse at 85% 4%,#392d663f,transparent 42%),var(--paper)}
+:root[data-theme="galaxy"] .intro{position:relative;isolation:isolate;overflow:hidden;background:radial-gradient(ellipse at 64% 28%,#51418430,transparent 43%),radial-gradient(ellipse at 85% 110%,#287a8c24,transparent 50%)}
+:root[data-theme="galaxy"] .intro:after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;opacity:.55;background-image:radial-gradient(circle at 18% 24%,#c8ddff 0 1px,transparent 1.5px),radial-gradient(circle at 47% 72%,#aeb3ed 0 1px,transparent 1.5px),radial-gradient(circle at 76% 38%,#bde6ee 0 1px,transparent 1.5px);background-size:193px 127px,267px 173px,319px 151px;mask-image:linear-gradient(90deg,transparent 24%,#000)}
+:root[data-theme="galaxy"] .brand-icon{color:#bac6ff;text-shadow:0 0 17px #8e91e94d}
+:root[data-theme="galaxy"] .topbar nav button.active:after{box-shadow:0 0 12px #8edce74d}
+:root[data-theme="galaxy"] .atlas-shell{border-radius:12px;box-shadow:0 0 0 1px #839add09,var(--shadow)}
+:root[data-theme="galaxy"] .leaflet-container{background-image:radial-gradient(circle at 10% 20%,#b6c4e318 0 1px,transparent 1px);background-size:93px 103px}
+:root[data-theme="galaxy"] .theme-control select{border-color:#637aa0}
+
+/* Gothic Garden: botanical structure, plum detail and antique gold. */
+:root[data-theme="gothic"] h1{font-weight:500;letter-spacing:-1.3px}
+:root[data-theme="gothic"] h2{font-weight:500;letter-spacing:-.2px}
+:root[data-theme="gothic"] .brand{font-weight:500;letter-spacing:-1.8px}
+:root[data-theme="gothic"] .brand-icon{font-family:Georgia,serif;color:#cfb16e}
+:root[data-theme="gothic"] .intro{position:relative;isolation:isolate;overflow:hidden;background:linear-gradient(100deg,#121d18 25%,#29352b33)}
+:root[data-theme="gothic"] .intro:after{content:"";position:absolute;z-index:-1;right:11%;top:-95px;width:320px;height:370px;border:1px solid #a68b5450;border-radius:49% 49% 6% 6%;transform:rotate(14deg);opacity:.45;background:radial-gradient(ellipse at 30% 26%,#8d9f6d24 0 12%,transparent 13%),radial-gradient(ellipse at 70% 40%,#8d9f6d24 0 14%,transparent 15%),radial-gradient(ellipse at 36% 67%,#8d9f6d24 0 16%,transparent 17%)}
+:root[data-theme="gothic"] .atlas-shell,:root[data-theme="gothic"] .card,:root[data-theme="gothic"] .recommendation{border-radius:4px}
+:root[data-theme="gothic"] .eyebrow{color:#cfb16e;letter-spacing:2px}
+:root[data-theme="gothic"] :is(.primary,.secondary,input,select){border-radius:3px}
+:root[data-theme="gothic"] .stats strong{font-family:Georgia,serif;font-weight:400;color:#e6cd93}
+:root[data-theme="gothic"] .topbar nav button.active:after{height:2px}
+:root[data-theme="gothic"] .tiny-tag{letter-spacing:.9px}
+:root[data-theme="gothic"] .cluster-icon{border-color:#c5ad75}
+
+/* Modern Atlas: a bright, contemporary alternative to Clean's warmer paper. */
+:root[data-theme="modern"] h1{font-weight:700;letter-spacing:-1.35px}
+:root[data-theme="modern"] h2{font-weight:650}
+:root[data-theme="modern"] .brand{font-weight:700;letter-spacing:-1.8px}
+:root[data-theme="modern"] .brand-icon{color:#007f8d}
+:root[data-theme="modern"] .intro{background:linear-gradient(115deg,#f3f7fb 30%,#e4f0f65c)}
+:root[data-theme="modern"] .atlas-shell{border-radius:12px;box-shadow:0 8px 35px #214b6d0c}
+:root[data-theme="modern"] :is(.card,.recommendation){box-shadow:0 4px 20px #25476306;border-radius:11px}
+:root[data-theme="modern"] .stats strong{font-weight:600;letter-spacing:-1px}
+:root[data-theme="modern"] .eyebrow{letter-spacing:1.5px}
+:root[data-theme="modern"] .topbar nav button.active{background:#eaf3f6}
+:root[data-theme="modern"] .theme-control select{border-color:#b8ccd8}
+
+@media(max-width:1300px){.topbar{gap:16px;padding-left:22px;padding-right:22px}.topbar nav button{padding-left:11px;padding-right:11px}.theme-control select{width:137px}.topbar .private-tag{display:none}}
+@media(max-width:1050px){.brand-sub{display:none}.topbar{gap:12px}.topbar nav button{font-size:11px;padding-left:9px;padding-right:9px}.theme-control{gap:5px}.theme-control label{display:none}.theme-control select{width:132px}}
+@media(max-width:760px){.topbar{height:auto;flex-wrap:wrap;padding:12px 16px 0;gap:0}.topbar .brand{order:0}.theme-control{order:1;margin-left:auto}.theme-control select{width:137px;min-height:34px;font-size:10px}.topbar nav{order:2;flex-basis:100%;margin-top:9px}.topbar .brand-sub{display:none}.topbar nav button{padding:0 5px;font-size:10px}.topbar .private-tag{display:none}:root[data-theme="gothic"] .intro:after{right:-80px;opacity:.25}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
