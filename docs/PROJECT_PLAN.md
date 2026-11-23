@@ -3,8 +3,8 @@
 **Baseline:** 2026-11-16. The code and README already describe a complete static site; this is a verification and migration plan, not a greenfield build.
 
 ## Phase 0 — Existing site audit
-- [ ] Inventory `dist/`, downloads, source notes and current workflows.
-- [ ] Verify intended sources and data vintages; identify any dataset limitations.
+- [x] Inventory `dist/`, downloads, source notes and current workflows (repository-level pass; see [ASSET_INVENTORY.md](ASSET_INVENTORY.md)).
+- [ ] Verify all intended sources and data vintages; identify any dataset limitations.
 - [ ] Record screenshots and outstanding UX issues.
 
 ## Phase 1 — Preview deployment
@@ -26,4 +26,4 @@
 Reliable map and profiles, intact downloads, clear data provenance, no unexpected upload retention, working custom domain and rollback instructions.
 
 ## Current cautions
-The existing repo contains real site files. Preserve and review them; do not replace it with the generic starter bundle.
+The existing repo contains real site files. Preserve and review them; do not replace it with the generic starter bundle. The inventory pass recorded large map/data payloads and a four-part national workbook download; these need runtime and performance verification before preview approval.
