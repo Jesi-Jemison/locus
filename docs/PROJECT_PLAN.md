@@ -26,4 +26,4 @@
 Reliable map and profiles, intact downloads, clear data provenance, no unexpected upload retention, working custom domain and rollback instructions, and resolved source/licence gates.
 
 ## Current cautions
-The existing repo contains real site files. Preserve and review them; do not replace them with a generic starter bundle. The site bundle is large and includes user-supplied segment outputs whose redistribution rights are unverified. Do not treat the preview or public release as licence-cleared until the recorded gates are closed.
+The existing repo contains real site files. Preserve and review them; do not replace them with a generic starter bundle. The site bundle is large and includes user-supplied segment outputs whose redistribution rights are unverified. A non-commercial-use and source/software notice page is now linked from the map and footer. Do not treat the preview or public release as licence-cleared until the recorded gates are closed.
