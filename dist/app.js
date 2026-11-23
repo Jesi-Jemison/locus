@@ -8,7 +8,7 @@ let atlas,locus={},localityByCode={},filtered=[],resultLimit=50,selectedPlace=nu
 let customIndex=new Map(),customThresholds=new Map();
 const map=L.map('map',{preferCanvas:true,zoomControl:false,minZoom:2,maxZoom:18}).setView([-26,134],4);
 L.control.zoom({position:'topright'}).addTo(map);
-map.attributionControl.addAttribution('ABS · AEC · Locus supplied');
+map.attributionControl.addAttribution('<a href="notices.html">Sources and licence notices</a>');
 const baseGroup=L.layerGroup().addTo(map),boundaryGroup=L.layerGroup().addTo(map),placeGroup=L.layerGroup().addTo(map),markerGroup=L.layerGroup().addTo(map),businessGroup=L.layerGroup().addTo(map),customShapeGroup=L.layerGroup().addTo(map);
 const streetTiles=L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'});
 function themeMapStyle(){const t=document.documentElement.dataset.theme||'synthwave',m={clean:['#d1ddc9','#ffffff'],synthwave:['#342752','#a38bbe'],galaxy:['#263654','#8c9ac0'],gothic:['#2b4135','#9eae91'],modern:['#d9e5eb','#ffffff']}[t]||['#d1ddc9','#ffffff'];return{fillColor:m[0],fillOpacity:$('streets').checked?.08:.8,color:m[1],weight:1.5};}
