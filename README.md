@@ -12,4 +12,4 @@ This is a static site. Import `Jesi-Jemison/locus` into Vercel with the reposito
 
 The former Sites deployment is still available during migration. Publishing this repository to Vercel does not switch the custom domain until its DNS and Vercel domain settings are changed.
 
-No license is granted by this repository. Data sources and usage caveats are described in the downloadable methodology and source inventory.
+Locus is intended for non-commercial use only. No blanket licence is granted by this repository; third-party data and software terms still apply. See [the source and attribution notices](dist/notices.html) before reusing data or software. Data methods and source caveats are also described in the downloadable files.
